@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一起傻逼</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: "Arial", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 15vw; /* 让字体大小根据屏幕宽度变化，超大 */
+      margin: 0;
+      line-height: 1;
+    }
+    .marquee {
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: black;
+    }
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+      font-size: 5vw;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    a {
+      position: absolute;
+      bottom: 30px;
+      color: #00ffff;
+      font-size: 4vw;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>傻逼</h1>
+
+  <div class="marquee">
+    <div class="marquee-text">
+      合约让所有韭菜变成傻逼，如果你是傻逼则加入频道 ⏩
+    </div>
+  </div>
+
+  <a href="https://t.me/+8SgiaAPkgpBhMjQ1" target="_blank">点击加入频道，一起傻逼</a>
+</body>
+</html>
