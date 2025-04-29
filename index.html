@@ -19,9 +19,15 @@
       text-align: center;
     }
     h1 {
-      font-size: 15vw; /* 让字体大小根据屏幕宽度变化，超大 */
+      font-size: 15vw;
       margin: 0;
       line-height: 1;
+    }
+    /* 给小屏幕专门加大字体 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40vw;
+      }
     }
     .marquee {
       position: absolute;
@@ -29,7 +35,6 @@
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
-      background-color: black;
     }
     .marquee-text {
       display: inline-block;
